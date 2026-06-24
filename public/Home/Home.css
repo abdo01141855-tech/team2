@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  margin-left: 100px;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-shop {
+  padding: 14px 28px;
+  border: none;
+  background: #2d3236;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-discover {
+  padding: 14px 28px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-shop:hover,
+.btn-discover:hover {
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.cards-section {
+  width: 90%;
+  margin: 80px auto;
+
+  display: flex;
+  gap: 20px;
+}
+
+.left-card {
+  flex: 2;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.left-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+.right-cards {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.small-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+}
+
+.overlay-text h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.overlay-text p {
+  font-size: 14px;
+}
+
+.left-card::after,
+.small-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.6),
+      transparent);
+}
+
+.left-card:hover img,
+.small-card:hover img {
+  transform: scale(1.05);
+}
+
+.left-card img,
+.small-card img {
+  transition: 0.4s;
+}
+
+.philosophy-section {
+  width: 100%;
+  padding: 80px 40px;
+  background-color: #f4f7f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.philosophy-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+
+.philosophy-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+}
+
+.main-image-wrapper {
+  width: 85%;
+}
+
+.main-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.sub-image-wrapper {
+  position: absolute;
+  bottom: -40px;
+  right: 40px;
+  width: 180px;
+  height: 180px;
+  background-color: #fff;
+  padding: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.sub-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.philosophy-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2b7a78;
+}
+
+.title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.description {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+.story-link {
+  align-self: flex-start;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 2px solid #111;
+  padding-bottom: 4px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.story-link:hover {
+  color: #2b7a78;
+  border-color: #2b7a78;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.story-link:hover .arrow {
+  transform: translateX(5px);
+}
