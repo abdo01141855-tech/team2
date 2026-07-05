@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+}
+.contact{
+    padding:60px;
+}
+.contact-container{
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    gap:30px;
+}
+.contact-left{
+    flex:2;
+    background:#fff;
+    padding:45px;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.contact-right{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+.contact-right h2,
+.contact-left h1{
+    margin-bottom:25px;
+    color:#1b1b1b;
+}
+.row{
+    display:flex;
+    gap:20px;
+}
+.input-box{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    margin-bottom:22px;
+}
+.input-box label{
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#444;
+}
+.input-box input,
+.input-box select,
+.input-box textarea{
+    border:none;
+    outline:none;
+    background:#eef2fa;
+    border-radius:5px;
+    padding:15px;
+    font-size:15px;
+}
+textarea{
+    resize:none;
+}
+.submit-btn{
+    margin-top:10px;
+    background:#00784d;
+    color:#fff;
+    border:none;
+    padding:16px 35px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+.submit-btn:hover{
+    background:#005f3d;
+}
+.info{
+    background:#fff;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.info-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+}
+.icon{
+    color:#00846a;
+    font-size:20px;
+    margin-top:3px;
+}
+.info-item span{
+    font-size:13px;
+    color:#666;
+}
+.info-item p{
+    margin-top:4px;
+    font-weight:bold;
+}
+.socials{
+    display:flex;
+    gap:12px;
+}
+.social{
+    width:45px;
+    height:45px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+    cursor:pointer;
+}
+.social:hover{
+    transform:translateY(-3px);
+}
+.map{
+    background:#fff;
+    padding:10px;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.map iframe{
+    width:100%;
+    height:280px;
+    border:none;
+}
